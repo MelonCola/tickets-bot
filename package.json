@@ -43,7 +43,9 @@
 		"node-fetch": "^2.6.5",
 		"semver": "^7.3.5",
 		"sequelize": "^6.6.5",
-		"terminal-link": "^2.1.1"
+		"terminal-link": "^2.1.1",
+		"pg": "^8.7.3",
+		"pg-hstore": "^2.3.4"
 	},
 	"devDependencies": {
 		"all-contributors-cli": "^6.20.0",
@@ -51,8 +53,6 @@
 		"mariadb": "^2.5.4",
 		"mysql2": "^2.3.0",
 		"nodemon": "^2.0.13",
-		"pg": "^8.7.1",
-		"pg-hstore": "^2.3.4",
 		"tedious": "^11.8.0"
 	},
 	"optionalDependencies": {
