@@ -35,7 +35,6 @@
 		"boxen": "^5.1.2",
 		"cryptr": "^6.0.2",
 		"discord.js": "^13.2.0",
-		"dotenv": "^8.6.0",
 		"keyv": "^4.0.3",
 		"leeks.js": "^0.2.4",
 		"leekslazylogger": "^3.0.2",
