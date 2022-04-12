@@ -37,6 +37,7 @@ module.exports = async (client) => {
 		client.log.info(`Connecting to ${types[type].name} database...`);
 		sequelize = new Sequelize(DATABASE_URL, {
 			dialect: types[type].dialect,
+			dialectOptions: { ssl: true },
 			logging: (text) => client.log.debug(text),
 		});
 	}
