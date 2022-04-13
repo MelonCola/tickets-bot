@@ -4,7 +4,7 @@ const { path } = require("../utils/fs");
 const types = require("./dialects");
 
 module.exports = async (client) => {
-	const { DB_TYPE, DATABASE_URL } = process.env;
+	const { DB_TYPE, JAWSDB_URL } = process.env;
 
 	const type = (DB_TYPE || "sqlite").toLowerCase();
 
@@ -35,14 +35,8 @@ module.exports = async (client) => {
 		client.log.warn("Message logging is disabled due to insufficient database");
 	} else {
 		client.log.info(`Connecting to ${types[type].name} database...`);
-		sequelize = new Sequelize(DATABASE_URL, {
+		sequelize = new Sequelize(JAWSDB_URL, {
 			dialect: types[type].dialect,
-			dialectOptions: {
-				ssl: {
-					rejectUnauthorized: false,
-					require: true,
-				},
-			},
 			logging: (text) => client.log.debug(text),
 		});
 	}

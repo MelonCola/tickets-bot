@@ -44,16 +44,16 @@
 		"semver": "^7.3.5",
 		"sequelize": "^6.6.5",
 		"terminal-link": "^2.1.1",
-		"pg": "^8.7.3",
-		"pg-hstore": "^2.3.4"
+		"mysql2": "^2.3.0"
 	},
 	"devDependencies": {
 		"all-contributors-cli": "^6.20.0",
 		"eslint": "^7.32.0",
 		"mariadb": "^2.5.4",
-		"mysql2": "^2.3.0",
 		"nodemon": "^2.0.13",
-		"tedious": "^11.8.0"
+		"tedious": "^11.8.0",
+		"pg": "^8.7.3",
+		"pg-hstore": "^2.3.4"
 	},
 	"optionalDependencies": {
 		"sqlite3": "^5.0.2"
