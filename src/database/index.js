@@ -38,6 +38,10 @@ module.exports = async (client) => {
 		sequelize = new Sequelize(JAWSDB_URL, {
 			dialect: types[type].dialect,
 			logging: (text) => client.log.debug(text),
+			pool: {
+				max: 5,
+				min: 0,
+			},
 		});
 	}
 
